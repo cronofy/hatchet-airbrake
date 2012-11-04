@@ -2,6 +2,7 @@ require 'airbrake'
     
 module Hatchet
   class AirbrakeAppender
+    include LevelManager
 
     # Public: The name to post the messages as (default: Hatchet).
     #
