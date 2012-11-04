@@ -31,7 +31,7 @@ describe "AirbrakeAppender" do
         @message = Hatchet::Message.new(random_string)
       end
       it "should not notify airbrake" do
-        Airbrake.should_not_receive(:notify)
+        ::Airbrake.should_not_receive(:notify)
         subject
       end
     end

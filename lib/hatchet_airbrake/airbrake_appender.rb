@@ -44,7 +44,7 @@ module Hatchet
           :error_message => @formatter.format(level, context, message),
           :backtrace => message.error.backtrace
         }
-        Airbrake.notify message.error, opts
+        ::Airbrake.notify message.error, opts
       end
     end
 
