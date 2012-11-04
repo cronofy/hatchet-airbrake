@@ -16,5 +16,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency('airbrake', '~> 3.1.6')
-  s.add_dependency('hatchet', '~> 0.0.17')
+  s.add_dependency('hatchet', '~> 0.0.18')
 end

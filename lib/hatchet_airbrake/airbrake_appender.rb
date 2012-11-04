@@ -6,10 +6,6 @@ module Hatchet
     #
     attr_accessor :name
 
-    # Public: The formatter used to format messages before sending them to Airbrake
-    #
-    attr_accessor :formatter
-
     # Public: Creates a new instance.
     #
     # By default the appender is created with a SimpleFormatter.
@@ -19,7 +15,6 @@ module Hatchet
     #
     def initialize
       @name = 'Hatchet-Airbrake'
-      @formatter = SimpleFormatter.new
       yield self if block_given?
     end
 

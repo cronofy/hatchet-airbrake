@@ -3,7 +3,7 @@ PATH
   specs:
     hatchet-airbrake (0.0.1)
       airbrake (~> 3.1.6)
-      hatchet (~> 0.0.17)
+      hatchet (~> 0.0.18)
 
 GEM
   remote: http://rubygems.org/
@@ -26,7 +26,7 @@ GEM
     guard-rspec (2.1.1)
       guard (>= 1.1)
       rspec (~> 2.11)
-    hatchet (0.0.17)
+    hatchet (0.0.18)
     listen (0.5.3)
     lumberjack (1.0.2)
     method_source (0.8.1)
