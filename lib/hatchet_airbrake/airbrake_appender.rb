@@ -6,10 +6,6 @@ module Hatchet
     #
     attr_accessor :name
 
-    # Public: The project's Airbrake API key
-    #
-    attr_accessor :api_key
-
     # Public: The formatter used to format messages before sending them to Airbrake
     #
     attr_accessor :formatter
@@ -38,7 +34,6 @@ module Hatchet
     def add(level, context, message)
       if message.error
         opts = {
-          :api_key => api_key,
           :error_message => @formatter.format(level, context, message),
           :backtrace => message.error.backtrace
         }

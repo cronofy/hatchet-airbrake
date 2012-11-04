@@ -4,7 +4,6 @@ describe "AirbrakeAppender" do
   describe "#add" do
     before(:each) do
       @appender = Hatchet::AirbrakeAppender.new
-      @appender.api_key = @api_key = random_string
       @level = random_string
       @context = random_string
       @error = StandardError.new
@@ -18,7 +17,6 @@ describe "AirbrakeAppender" do
 
     it "should notify airbrake" do
       expected_options = {
-        :api_key => @api_key,
         :error_message => @appender.formatter.format(@level, @context, @error_message),
         :backtrace => @backtrace
       }
