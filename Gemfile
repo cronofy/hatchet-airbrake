@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'hatchet', :git => 'https://github.com/gshutler/hatchet.git', :branch => 'error-passing'
-gem 'airbrake'
+gemspec
 
 gem 'rake'
 

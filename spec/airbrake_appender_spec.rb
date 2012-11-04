@@ -17,7 +17,7 @@ describe "AirbrakeAppender" do
 
     it "should notify airbrake" do
       expected_options = {
-        :error_message => @appender.formatter.format(@level, @context, @error_message),
+        :error_message => @error_message,
         :backtrace => @backtrace
       }
       ::Airbrake.should_receive(:notify).with(@error, expected_options)

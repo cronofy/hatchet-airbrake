@@ -1,9 +1,9 @@
-GIT
-  remote: https://github.com/gshutler/hatchet.git
-  revision: ae10bb664443928cc54375ea2f07d2e68b3a8820
-  branch: error-passing
+PATH
+  remote: .
   specs:
-    hatchet (0.0.17)
+    hatchet-airbrake (0.0.1)
+      airbrake (~> 3.1.6)
+      hatchet (~> 0.0.17)
 
 GEM
   remote: http://rubygems.org/
@@ -26,6 +26,7 @@ GEM
     guard-rspec (2.1.1)
       guard (>= 1.1)
       rspec (~> 2.11)
+    hatchet (0.0.17)
     listen (0.5.3)
     lumberjack (1.0.2)
     method_source (0.8.1)
@@ -50,10 +51,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  airbrake
   growl
   guard-rspec
-  hatchet!
+  hatchet-airbrake!
   rake
   rb-fsevent (~> 0.9.1)
   rspec

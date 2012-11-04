@@ -34,7 +34,7 @@ module Hatchet
     def add(level, context, message)
       if message.error
         opts = {
-          :error_message => @formatter.format(level, context, message),
+          :error_message => message.to_s,
           :backtrace => message.error.backtrace
         }
         ::Airbrake.notify message.error, opts
