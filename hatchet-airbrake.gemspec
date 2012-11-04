@@ -3,7 +3,7 @@ require "hatchet_airbrake/version"
 
 Gem::Specification.new do |s|
   s.name        = "hatchet-airbrake"
-  s.version     = Hatchet::Airbrake::VERSION.dup
+  s.version     = HatchetAirbrake::VERSION.dup
   s.platform    = Gem::Platform::RUBY 
   s.summary     = "Hatchet appender for posting errors to airbrake"
   s.email       = "adam.bird@gmail.com"

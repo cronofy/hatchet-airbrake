@@ -22,7 +22,7 @@ describe "AirbrakeAppender" do
         :error_message => @appender.formatter.format(@level, @context, @error_message),
         :backtrace => @backtrace
       }
-      Airbrake.should_receive(:notify).with(@error, expected_options)
+      ::Airbrake.should_receive(:notify).with(@error, expected_options)
       subject
     end
 

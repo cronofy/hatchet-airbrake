@@ -1,5 +1,3 @@
-require 'airbrake'
-    
 module Hatchet
   class AirbrakeAppender
     include LevelManager

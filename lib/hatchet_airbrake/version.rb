@@ -1,3 +1,3 @@
-module Hatchet::Airbrake
+module HatchetAirbrake
   VERSION = "0.0.1".freeze
 end
