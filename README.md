@@ -20,11 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
+The gem assumes that Airbrake has already been configured elsewhere in the application so all you need to do is create the appender
+
 ```ruby
 Hatchet.configure do |config|
-  config.appenders << Hatchet::AirbrakeAppender.new do |appender|
-    appender.api_key   = 'YOUR_AIRBRAKE_PROJECT_API_KEY'
-  end
+  config.appenders << Hatchet::AirbrakeAppender.new
 end
 ```
 
