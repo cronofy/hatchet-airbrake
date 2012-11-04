@@ -1,6 +1,7 @@
 require_relative '../lib/hatchet_airbrake'
 require 'hatchet'
 require 'airbrake'
+require 'rspec'
 
 RSpec.configure do |config|
   config.color_enabled = true
