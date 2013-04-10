@@ -4,6 +4,8 @@ An [Airbrake](http://airbrake.io) appender for [Hatchet](http://gshutler.github.
 
 [![Build Status](https://secure.travis-ci.org/adambird/hatchet-airbrake.png?branch=master)](http://travis-ci.org/adambird/hatchet-airbake)
 
+[![endorse](https://api.coderwall.com/adambird/endorsecount.png)](https://coderwall.com/adambird)
+
 ## Installation
 
 Add this line to your application's Gemfile:
