@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/adambird/hatchet-airbrake"
   s.description = "Hatchet appender for posting errors to airbrake"
   s.authors     = ['Adam Bird']
+  s.license     = 'MIT'
 
   s.files         = Dir["lib/**/*"]
   s.test_files    = Dir["spec/**/*"]
