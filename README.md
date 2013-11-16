@@ -10,7 +10,7 @@ An [Airbrake](http://airbrake.io) appender for [Hatchet](http://gshutler.github.
 
 Add this line to your application's Gemfile:
 
-    gem 'hatchet-airbrake'
+    gem 'hatchet-airbrake', require: 'hatchet_airbrake'
 
 And then execute:
 
