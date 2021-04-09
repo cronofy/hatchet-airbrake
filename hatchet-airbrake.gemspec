@@ -16,6 +16,6 @@ Gem::Specification.new do |s|
   s.test_files    = Dir["spec/**/*"]
   s.require_paths = ["lib"]
 
-  s.add_dependency('airbrake', '~> 3.1')
-  s.add_dependency('hatchet', '~> 0.2')
+  s.add_dependency('airbrake', '> 3.1')
+  s.add_dependency('hatchet', '> 0.2.13')
 end
